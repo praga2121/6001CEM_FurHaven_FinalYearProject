@@ -1,0 +1,22 @@
+Admin Access Information
+Username: admin
+Password: admin123
+
+Sample Client/Customer Access:
+Email: jsmith@sample.com
+Password: jsmith123
+
+Email: jsmith@sample.com
+Password: jsmith123
+
+For User:  http://localhost:8080/ecomm
+
+For Admin: http://localhost:8080/ecomm/admin
+
+Edit Base URL at initialize.php (line 3 with the following);
+if(!defined('base_url')) define('base_url','http://localhost:8080/ecomm/');
+
+For the Contact us page, we will be using a fake Email hosterhttps://mailgolem.com/
+Temporary Email address: mayigasi@mailgolem.com / 7ebcadb642238fad09706ef074802dfa
+Then Add this Line to your Contact form.php:
+<form target="_blank" action="https://formsubmit.co/<your temporary ID/fake email>" method="POST"> 
